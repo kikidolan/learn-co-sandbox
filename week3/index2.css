@@ -1,0 +1,19 @@
+.my-content {
+  background: goldenrod;
+  width: 100%;
+  display: inline;
+}
+
+@media all and (max-width:768px) {
+  /*this is a media query*/
+ 
+  .my-content {
+    background: mistyrose;
+    border: 10px solid goldenrod;
+  }
+}
+
+@media only screen and (max-width:768px), (mind-width:1168px) {
+  
+  /*If the browser is displaying this through a screen and the screen is either 768px or lower, or at least 1168px or higher, then run this CSS */
+} 
