@@ -1,6 +1,7 @@
 const API_Key = 'Gafga3uOF3HGeKGwKW3xEo0rZP3DN32A'
 
 document.addEventListener('DOMContentLoaded', (event) => {
+  navigator.geolocation.getCurrentPosition()
   document.addEventListener('submit', (event) => {
     const input = document.getElementById('ticketmaster-search')
     const value = input.value
