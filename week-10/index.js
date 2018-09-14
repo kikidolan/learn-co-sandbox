@@ -19,9 +19,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
       const eventH1 = document.createElement('h1')
       const eventDates = document.createElement('p')
       const eventPrices = document.createElement('p')
-      eventH1
-      
-      
+      eventH1.innerHTML = event.name 
+      eventDates.innerHTML = event.dates.start.localDate + " " + event.dates.start.localTime
+      eventPrices.innerHTML = event.priceRanges.min + "-" + event.priceRanges.max
+      eventDiv.appendChild(eventH1)
+      eventDiv.appendChild(eventDates)
+      eventDiv.appendChild(eventPrices)
+      container.appendChild(eventDiv)
     
     })
   }
