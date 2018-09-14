@@ -15,6 +15,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const container = document.getElementById('events-container')
     const events = json._embedded.events
     events.forEach((event) => {
-      document.createElement('div')
+      const eventDiv = document.createElement('div')
+      const eventH1 = document.createElement('h1')
+      const eventDates = document.createElement('p')
+      const eventPrices = document.createElement('p')
+      eventH1
+      
+      
+    
     })
   }
