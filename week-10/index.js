@@ -13,4 +13,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   function makeEvents(json) {
     const container = document.getElementById('events-container')
+    const events = json._embedded.events
+    events.forEach((event) => {
+      document.createElement('div')
+    })
   }
