@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     fetch(`https://app.ticketmaster.com/discovery/v2/events.json?keyword=${value}&apikey=${API_Key}`)
     .then(response => response.json())
     .then(responseJson = console.log(responseJson))
-  })
+  }))
 
   function makeEvents(json) {
     const container = document.getElementById('events-container')
