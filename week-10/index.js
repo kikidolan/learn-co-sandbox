@@ -10,4 +10,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     .then(response => response.json())
     .then(responseJson = console.log(responseJson))
   })
-})
+
+  function makeEvents(json) {
+    const container = document.getElementById('events-container')
+  }
